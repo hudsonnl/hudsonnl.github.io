@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "UTF-8"/>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	background-image: url(../../CSSian/back3.jpg);
+	background-repeat: no-repeat;	
+	background-size: cover;
+	background-attachment: fixed; 
+	 font-family: "Times New Roman", Georgia, Serif;
+	 font-size: 120%;
+}
+#Header {
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #222;
+	color: white;
+	padding: 20px;
+	font-style: italic;
+	font-variant: small-caps;
+}
+.div-bar{
+	background-color: #666;
+	width: 100%;
+	overflow: auto;
+	position: sticky;
+	top: 0;
+}
+.div-bar a{
+	text-decoration: none;
+	float: left;
+	text-align: center;
+	color: white;
+	width: 12.5%;
+	padding: 8px 0;
+}
+.div-bar a.normal:hover  {
+	background-color: #888;
+	transition: 0.5s;
+}
+.div-bar a.normal:active  {
+	border-color: #888; 
+	background-color: #888;
+	transition: 0.5s;
+}
+a.selected {
+	background-color: #4CAF50;
+}
+a.selected:hover {
+	background-color: #4CAF50;
+} 
+.contents {
+	padding: 0;
+	height: 100%;
+	overflow: auto;
+}
+.contents .notSeen {
+	padding: 0 18px;
+	display: none;
+}
+.contents .Seen {
+	padding: 1px 30px;
+}
+</style>
+
+
+<body>
+<div id="Header"> Hudson Lima's Website </div>
+
+<div class="div-bar">
+	<a href="#" class="normal" onclick="select(0)">Home</a>
+	<a href="#" class="normal" onclick="select(1)">Papers</a>
+	<a href="#" class="normal" onclick="select(2)">Teaching</a>
+	<a href="#" class="normal" onclick="select(3)">Curriculum</a>
+	<a href="#" class="selected" onclick="select(4)">Links</a>
+	<a href="#" class="normal" onclick="select(5)">People</a>
+	<a href="#" class="normal" onclick="select(6)">Events</a>
+	<a href="#" class="normal" onclick="select(7)">Contact</a>
+</div>
+<div class="contents">
+	<div class="notSeen">
+		<h3>Home</h3>
+		<p >I am currently a PhD student at 
+				<a href="http://www.impa.br" target="_blank">IMPA</a>,
+					Rio de Janeiro, Brazil. I am under the supervision of
+				 <a href="http://www.impa.br/~henrique" target="_blank">Henrique Bursztyn</a>. I have 
+				 also spent some time (Aug-Dec/2015) at <a href="http://illinois.edu/" target="_blank">UIUC</a>
+				 under the supervision of <a href="http://www.math.illinois.edu/~ruiloja/" target="_blank">Rui Loja Fernandes</a>. <br /> <br />
+				   I'm interested
+					in symplectic/poisson geometry, Lie algebroids and groupoids, Courant algebroids,
+					deformation cohomology, normal forms and splitting theorems.
+		</p>	
+	</div>
+	<div class="notSeen">
+		<h3>Papers and preprints:</h3>
+		<p><ul>
+			<li>
+				<a href="http://arxiv.org/abs/1605.05386" target="_blank">
+					Splitting theorems for Poisson and related structures  
+				</a>
+				(with H. Bursztyn and E. Meinrenken). Preprint.
+	   	</li>
+	</ul></p>	
+	</div>
+	<div class="notSeen">
+		<h3>Teaching Assistent</h3>
+		<p><ul>
+			<li> Aug/Nov 2013: Álgebra II at IMPA.</li>
+	   	<li> Jan/Feb 2014: Grupo Fundamental e Espaços de Recobrimento at IMPA.</li>
+	   	<li> Jan/Feb 2015: Grupo Fundamental e Espaços de Recobrimento at IMPA. </li>
+	   	<li> Mar/Jun 2016: Estruturas Algebricas at PUC.</li>
+		</ul></p>	
+	</div>
+	<div class="notSeen">
+		<h3>Curriculum</h3>
+		<p>Some paragraph with the explanations of the
+		thing related to the title.</p>	
+	</div>
+	<div class="Seen">
+		<h3>Links</h3>
+		<p>Some paragraph with the explanations of the
+		thing related to the title.</p>	
+	</div>
+	<div class="notSeen">
+		<h3>People</h3>
+		<p>Some paragraph with the explanations of the
+		thing related to the title.</p>	
+	</div>
+	<div class="notSeen">
+		<h3>Events</h3>
+		<p>Some paragraph with the explanations of the
+		thing related to the title.</p>	
+	</div>
+	<div class="notSeen">
+		<h3>Contact</h3>
+		<p>Some paragraph with the explanations of the
+		thing related to the title.</p>
+		<p>
+		 Lorem ipsum dolor sit amet, ut tristique eget feugiat non scelerisque dicta. Ullamcorper neque lacus donec. Aliquam massa vivamus orci quis, vestibulum velit justo. Non urna suscipit consectetuer libero quis, proin justo ac phasellus mi wisi ultrices, praesent est, per ac vel, orci diam blandit et hendrerit suspendisse dictum. In vitae, quam vel. Neque quae tincidunt fusce, tortor id nec interdum justo gravida, laoreet a est vitae vel, ornare lacus, velit vel varius porta velit ut. Convallis ac ac leo suscipit, mollis justo eu, molestie elit, diam sed phasellus, at sem suspendisse faucibus vitae. Turpis odio, ligula sed dolor leo turpis vel. Feugiat arcu tortor nulla, mollis nam, integer in facilisis vehicula mattis, nam nec vitae arcu pellentesque pulvinar. Vel wisi nulla duis ut, vitae commodo cras. Tempor mus, sit suspendisse cras est, consequat rutrum donec nascetur dui egestas.
+
+Dolores vel tincidunt nec tempor. Risus velit, consectetuer id rutrum nostrud hymenaeos, enim mollis neque suscipit dui, tristique metus suspendisse eget wisi. Eget class eu aenean sed, nibh litora eget sem sapien, eget sed elementum ipsum in, bibendum felis pellentesque cursus porttitor curabitur leo, suscipit dui arcu class. Laoreet vitae, hendrerit fusce et dolor elit, id vulputate mi per convallis nisl, quia diam convallis, cras erat urna quis. Sed cursus ultricies tortor, augue pede, nulla neque leo malesuada eleifend suspendisse, risus sit fames tempor, suspendisse at odio fermentum massa scelerisque.
+
+Elit euismod per pede suspendisse pellentesque dis. In rhoncus risus senectus ac nec, mauris nascetur nec eros, porttitor ligula placerat. Integer arcu, quis in, enim tempus arcu, eget ullamcorper massa duis amet. Sit neque sed. Id porttitor auctor tristique amet, volutpat velit et imperdiet ac cras eros, cursus cras, nulla id orci mauris rutrum a feugiat. Ante eget, semper vitae cubilia, et praesent. Lorem urna neque lobortis, semper conubia aenean, tempus hendrerit suspendisse faucibus hendrerit quam in. Quam in vitae dolor leo hendrerit luctus.
+
+Porta eros morbi amet vel venenatis feugiat, et sit nunc. Et tempor vel ac felis, odio litora quis, sem sed magnis sed inceptos, ante cras neque et dapibus imperdiet tortor. Tellus amet justo nibh duis sapien porta, in arcu potenti elit, id ullam scelerisque nulla egestas, nisl sed nunc viverra fermentum. Mattis donec egestas pharetra pellentesque sem proin. Ipsum et porttitor, sem pharetra. Sodales non proin diam metus, hymenaeos dolor eros viverra, nunc lectus ac lacus. Lectus condimentum etiam, placerat praesent integer bibendum, cum interdum purus.
+		
+		</p>	
+	</div>
+</div>
+
+<script>
+function select(n) {	
+var elementsA = document.getElementsByClassName("div-bar")[0].getElementsByTagName("a");
+var elementsC = document.getElementsByClassName("contents")[0].getElementsByTagName("div");
+var i;
+	for (i=0; i<elementsA.length; i++) {
+		elementsA[i].className = "normal"; //put them all to normal
+		elementsC[i].className = "notSeen";
+	}
+	elementsA[n].className = "selected"; //put the clicked to selected
+	elementsC[n].className = "Seen";
+}
+</script>
+	
+</body>
+</html>
