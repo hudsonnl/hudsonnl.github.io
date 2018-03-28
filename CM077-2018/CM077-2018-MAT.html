@@ -1,0 +1,288 @@
+<!-- 
+This page was originally created by Hudson Lima.
+You may edit it as you wish, provided you DO NOT
+edit this comment. Hints and comments are welcome:
+hudson04brhelper@gmail.com
+ -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"/>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			background-color: #ddd;
+			position: relative;
+			font-size: 100%;
+		}
+		.menuColumn{
+			background-color: #666;
+			color: black;
+			float: left;
+			padding: 0;
+			margin: 0;
+			width: 20%;
+			height: 100vh;
+			position: absolute;
+		}
+		
+		.header{
+			background-color: #333;
+			font-size: 1.3em;
+			color: white;
+			float: right;
+			margin: 0;
+			padding-top: 3vh;
+			width: 80%;
+			height: 10vh;
+			position: relative;
+			text-align: center;
+		}
+		
+		
+		.contentArea{
+			position: relative;
+			background-color: #ddd;;
+			float: right;
+			margin: 0;
+			width: 80%;
+			height: 82vh;
+			overflow: auto;
+		}
+		
+		.rodape{
+			position: relative;
+			margin: 0;
+			width: 80%;
+			padding: 1vh 0;
+			height: 3vh;
+			float: right;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 0.95em;
+		}
+		
+		.rodape a{
+			display: inline;
+			padding: 0 1%;
+			text-decoration: none;
+			color: white;
+		}
+		
+		.barItem{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			margin-left:3em;
+			padding: 1em;
+			border-bottom: 1px solid #67e56b;
+			color: #4CAF50;
+			cursor: pointer;
+		}
+
+		.barItemSelected{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid white;
+			color: white;
+			cursor: pointer;
+		}
+
+		.barItem:hover{
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid #ccc;
+			color: #ccc;
+			transition: 0.7s;
+		}
+		
+		.Seen{
+			margin: 4% 6%;
+			font-size:1.1em;
+		}
+		
+		.notSeen{
+			display: none;
+		}
+		
+		h2{
+			color: #4CAF50;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+
+<div class="menuColumn">
+<a href="http://www.ufpr.br/" target="_blank"><img id = "logo" src="logo_ufpr_branca.png" width="75%" style="margin-top:5%;margin-left:12.5%;margin-bottom:10%;"></img></a>
+
+<div class = "barItemSelected" onclick = "select(0)">O Curso</div>
+<div class = "barItem" onclick = "select(1)">Avisos</div>
+<div class = "barItem" onclick = "select(2)">Cronograma</div>
+<div class = "barItem" onclick = "select(3)">Avaliação</div>
+<div class = "barItem" onclick = "select(4)">Exercícios</div>
+<div class = "barItem" onclick = "select(5)">Notas de Aula</div>
+
+</div> 
+
+<div class="header">
+CM077 - Introdução à Geometria Diferencial <br/> <span style="font-size:80%;"> DMAT - UFPR - 2018 </span>
+</div>
+
+
+<div class="contentArea">
+
+<div class="Seen">
+<h2>Sobre o curso<hr/>
+</h2>
+Esta é a página do curso <i><a href="" >CM077 - Introdução à Geometria Diferencial</a></i>, ministrado pelo professor
+<a href="http://docs.ufpr.br/~hudsonlima" target="_blank">Hudson Lima</a>. <br/><br/>
+O curso tem como objetivo introduzir conceitos fundamentais em geometria diferencial clássica no âmbito de curvas e superfícies 
+mergulhadas em espaços euclidianos. Os principais resultados apresentados serão o Teorema Egregium e o Teorema de Gauss-Bonnet.
+<br/><br/>
+Ao final do curso, é esperado do aluno os seguintes conhecimentos:
+<ul>
+	<li>Relação entre campos normais e orientação.</li>
+	<li>Equações de compatibilidade.</li>
+	<li>Aplicações do Teorema de Gauss-Bonnet.</li>
+</ul>
+
+<h2>Programa<hr/></h2>
+O programa oficial da diciplina também pode ser encontrado em <a target="_blank" href="http://www.mat.ufpr.br/documentos/programas/CM077.pdf">CM077</a>.
+<ol>
+	<li>Curvas, parametrização e triedo de Frenet.</li>
+	<li>Superfícies regulares.</li>
+	<li>Funções em superfícies.</li>
+	<li>Plano tangente.</li>
+	<li>Orientação de superfícies.</li>
+	<li>Aplicação normal de Gauss.</li>
+	<li>Equações de Codazzi-Mainardi.</li>
+	<li>Theorema Egregium.</li>
+	<li>Transporte paralelo e Geodésicas.</li>
+	<li>O Teorema de Gauss-Bonnet.</li>
+</ol>
+
+<h2>Bibliografia<hr/></h2>
+<b>Título:</b> Geometria Diferencial de Curvas e Superfícies.<br/>
+<b>Autor(es):</b> Manfredo do Carmo. <br/>
+<b>Editora:</b> SBM, 2014.<br/><br/>
+
+<b>Título:</b> Differential geometry: curves - surfaces - manifolds.<br/>
+<b>Autor(es):</b> Wolfgang Kuhnel.<br/>
+<b>Editora:</b> American Mathematical Society, 2005.<br/><br/>
+
+
+</div>
+
+<div class="notSeen">
+<h2>Avisos<hr/></h2>
+Os avisos relativos ao curso serão publicados aqui.
+<ul>
+	<li><b>20/02/2018:</b> NÃO teremos aula na quinta-feira dia 22/02/2018. As aulas continuam normalmente na terça seguinte. 
+	<br/> <br/></li>
+	<li><b>27/02/2018:</b> NÃO teremos aula na terça-feira dia 27/02/2018. As aulas continuam normalmente na quinta seguinte,
+		a lista de exercício fica para ser entregue nesta nova data. <br/><br/></li>
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Cronograma<hr/></h2>
+Neste espaço teremos um breve resumo do conteúdo coberto em cada aula.<br/>
+Esta página será atualizada semanalmente.
+<ul>
+	<li><b>Aula 1 - 20/02.</b> <br/>Visão panorâmica do curso: principais resultados e história dos resultados.
+	Curvas parametrizadas regulares. Parametrização pelo comprimento de arco.<br/><br/></li>
+	<li><b>Aula 2 - 01/03.</b> <br/>Curvatura no plano. Plano osculador. Referencial de Frenet. Lista 1.   <br/><br/></li>
+	<li><b>Aula 3 - 06/03.</b> <br/>Tópicos extra: Representação de Riesz, produto vetorial, derivada de formas bilineares, orientação de
+	espaços vetoriais, enunciado do teorema de existência e unicidade de EDOs de campos vetoriais, movimentos rígidos de R^n e Teorema fundamental da
+	teoria local das curvas.<br/><br/></li>
+	<li><b>Aula 4 - 08/03.</b> <br/>EDOs não autonomas e com múltiplas derivadas. Função ângulo e índice de rotação no plano. Definição de 
+	superfície parametrizada.<br/><br/></li>
+	<li><b>Aula 5 - 09/03.</b><br/>Resolução de exercícios.<br/><br/></li>
+	<li><b>Aula 6 - 13/03.</b><br/>Superfícies e funções diferenciáveis. <br/><br/></li>
+	<li><b>Aula 7 - 15/03.</b><br/> (...) <br/><br/></li>
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Avaliação<hr/></h2>
+A avaliação dos alunos se dará por meio de <b>duas provas</b> e <b>listas de exercícios</b> (pelo menos 3 listas).<br/>
+A média final (MF) será a <b>média aritmética</b> entre a nota da primeira prova (P1), a nota da segunda prova (P2) e
+a média das listas (ML).<br/><br/>
+
+<h1 style="background-color:#4CAF50; font-size:1.3em; text-align:center;margin: 0 20%;" >MF = (P1 + P2 + ML)/3</h1>
+
+<ul style="font-size:1.2em;">
+	<li> Média Final maior ou igual a 70 (MF &#8805; 70): <b>aprovado</b>;</li>
+	<li> Média Final menor que 40 (MF<40): <b>reprovado</b> (sem direito a prova final);</li>
+	<li> Média Final entre 40 e 70 (40 &#8804; MF < 70): aprovação sujeita a um <b>exame final</b> (EF):</li>
+	<ul>
+		<li> Se (EF+MF)/2 &#8805 50: <b>aprovado</b>;</li>
+		<li> Se (EF+MF)/2 < 50: <b>reprovado</b>.</li>
+	</ul>
+</ul>
+Informações sobre como solicitar <b>segunda chamada</b> ou <b>revisão de avaliação</b> podem ser encontradas no link a seguir.
+<p style="text-align:center;"><a href="http://www.mat.ufpr.br/departamento/documentos.html" target="_blank">
+www.mat.ufpr.br/departamento/documentos.html</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Exercícios<hr/></h2>
+Neste espaço teremos as listas de exercício e as datas de entrega.
+<ul>
+	<li><b>Entrega 27/02/2018:</b> <a href="Listas/CM077-Lista01-2018.pdf" target="_blank">Lista 01</a> (entrega alterada para 01/03/2018).</li>
+	<li><b>Entrega 13/03/2018:</b> <a href="Listas/CM077-Lista02-2018.pdf" target="_blank">Lista 02</a>.</li>
+	<li><b>Entrega 22/03/2018:</b> <a href="Listas/CM077-Lista03-2018.pdf" target="_blank">Lista 03</a>.</li>
+
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Notas de aula<hr/></h2>
+Notas de aula poderão ser adicionadas neste espaço durante o curso.
+
+</div>
+
+
+</div>
+
+
+<div class="rodape">
+<a href="http://www.mat.ufpr.br" target="_blank">DMAT-UFPR</a>
+<a href="" target="_blank">Contato</a>
+<a href="http://docs.ufpr.br/~hudsonlima/" target="_blank">&copy 2018 - Hudson Lima</a>
+
+</div>
+
+<script>
+function select(n) {	
+var elementsA = document.getElementsByClassName("menuColumn")[0].getElementsByTagName("div");
+var elementsC = document.getElementsByClassName("contentArea")[0].getElementsByTagName("div");
+var i;
+	for (i=0; i<elementsA.length; i++) {
+		elementsA[i].className = "barItem"; //put them all to normal
+	}
+	for (i=0; i<elementsC.length; i++){
+		elementsC[i].className = "notSeen";
+	}
+	elementsA[n].className = "barItemSelected"; //put the clicked to selected
+	elementsC[n].className = "Seen";
+}
+
+</script>
+
+
+</body>
+</html>
