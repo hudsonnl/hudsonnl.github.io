@@ -1,0 +1,333 @@
+<!-- 
+This page was originally created by Hudson Lima.
+You may edit it as you wish, provided you DO NOT
+edit this comment. Hints and comments are welcome:
+hudson04brhelper@gmail.com
+ -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"/>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			background-color: #ddd;
+			position: relative;
+			font-size: 100%;
+		}
+		.menuColumn{
+			background-color: #666;
+			color: black;
+			float: left;
+			padding: 0;
+			margin: 0;
+			width: 20%;
+			height: 100vh;
+			position: absolute;
+		}
+		
+		.header{
+			background-color: #333;
+			font-size: 1.3em;
+			color: white;
+			float: right;
+			margin: 0;
+			padding-top: 3vh;
+			width: 80%;
+			height: 10vh;
+			position: relative;
+			text-align: center;
+		}
+		
+		
+		.contentArea{
+			position: relative;
+			background-color: #ddd;;
+			float: right;
+			margin: 0;
+			width: 80%;
+			height: 82vh;
+			overflow: auto;
+		}
+		
+		.rodape{
+			position: relative;
+			margin: 0;
+			width: 80%;
+			padding: 1vh 0;
+			height: 3vh;
+			float: right;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 0.95em;
+		}
+		
+		.rodape a{
+			display: inline;
+			padding: 0 1%;
+			text-decoration: none;
+			color: white;
+		}
+		
+		.barItem{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			margin-left:3em;
+			padding: 1em;
+			border-bottom: 1px solid #67e56b;
+			color: #4CAF50;
+			cursor: pointer;
+		}
+
+		.barItemSelected{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid white;
+			color: white;
+			cursor: pointer;
+		}
+
+		.barItem:hover{
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid #ccc;
+			color: #ccc;
+			transition: 0.7s;
+		}
+		
+		.Seen{
+			margin: 4% 6%;
+			font-size:1.1em;
+		}
+		
+		.notSeen{
+			display: none;
+		}
+		
+		h2{
+			color: #4CAF50;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+
+<div class="menuColumn">
+<a href="http://www.ufpr.br/" target="_blank"><img id = "logo" src="logo_ufpr_branca.png" width="75%" style="margin-top:5%;margin-left:12.5%;margin-bottom:10%;"></img></a>
+
+<div class = "barItemSelected" onclick = "select(0)">O Curso</div>
+<div class = "barItem" onclick = "select(1)">Avisos</div>
+<div class = "barItem" onclick = "select(2)">Cronograma</div>
+<div class = "barItem" onclick = "select(3)">Avaliação</div>
+<div class = "barItem" onclick = "select(4)">Exercícios</div>
+<div class = "barItem" onclick = "select(5)">Extra</div>
+<div class = "barItem" onclick = "select(6)">Notas de Aula</div>
+
+</div> 
+
+<div class="header">
+CM201 - Cálculo Diferencial e Intergral I <br/> <span style="font-size:80%;"> DMAT - UFPR - 2018 </span>
+</div>
+
+
+<div class="contentArea">
+
+<div class="Seen">
+<h2>Sobre o curso<hr/>
+</h2>
+Esta é a página do curso <i><a href="" >CM201 - Cálculo Diferencial e Intergral I</a></i> para 
+<a href="http://www.bio.ufpr.br/portal/" target="_blank">Ciências Biológicas</a>, ministrado pelo professor
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank">Hudson Lima</a>. <br/><br/>
+Este curso tem como objetivo o estudo das funções suaves definidas em intervalos de números reais.
+<br/><br/>
+Ao final do curso, é esperado do aluno os seguintes conhecimentos:
+<ul>
+	<li>Exemplos de funções elementares e seus gráficos.</li>
+	<li>Conceito de derivada e sua interpretação gráfica.</li>
+</ul>
+
+
+<h2>Programa<hr/></h2>
+O programa oficial da diciplina é: 
+
+
+<span style="margin: 1em 1.3em;display:block;">
+	Números reais e expressões algébricas. <br/>
+	Funções de uma variável real. <br/>
+	Gráficos. <br/>
+	Funções do primeiro e do segundo graus. <br/>
+	Função raiz quadrada. Funções polinomiais.<br/>
+	Funções exponenciais e logarítmicas. Funções trigonométricas. <br/>
+	Derivadas e taxas de variaçao.<br/>
+	
+	
+	</span>
+</span>
+<h2>Bibliografia<hr/></h2>
+<span style="margin:1em 1.3em;display:block;">
+D. Kennedy, G.D. Foley e F. Demana, <b>Pré-Cálculo</b>, 2a edição, Pearson, São Paulo, 2013.<br/><br/>
+
+E. Connally, D. Hughes-Hallet, A.M. Gleason, P.Cheifetz, P.F. Lock, K.R. Rhea e C.E. Swenson,<br/> 
+<b>Funções para Modelar Variações: Uma Preparação para o Cálculo</b>, 3a edição, LTC, São Paulo, 2009. <br/><br/>
+
+
+J. Stewart, <b>Cálculo - Vol. 1 </b>, 7a edição, Cengage Learning, São Paulo, 2013.<br/><br/>
+
+V.Z. Medeiros, L.M.O. da Silva, M.A.S.C. Machado e A. Machado, <b>Pré-Cálculo</b>, 3a edição, Cengage Learning, São Paulo, 2013. <br/><br/>
+A.A. Dornelles Filho, A.M. Adami e M.M Lorandi, <b>Pré-Cálculo</b>, 1a edição, Bookman, Porto Alegre, 2015. <br/><br/>
+
+<span>
+
+
+</div>
+
+<div class="notSeen">
+<h2>Avisos<hr/></h2>
+Os avisos relativos ao curso serão publicados aqui.
+<ul>
+	<li><b>12/03/2018:</b> Primeira <b>PROVA</b> marcada para o dia <b>03/04/2018</b> no horário da aula. <br/> <br/></li>
+	<li><b>14/03/2018:</b> Próxima quinta-feira, dia <b>15/03/2018</b>, não haverá aula. Na terça subsequente haverá aula normal e marcaremos uma reposição. <br/> <br/></li>
+	<li><b>20/03/2018:</b> Reposição de aula marcada para sexta-feira dia <b>23/04/2018</b> na mesma sala. <br/> <br/></li>
+	<li><b>10/04/2018:</b> Na aula de hoje os alunos poderão rever a nota da prova, e será aplicada a prova diagnóstico do
+			       departamento de matemática. <br/> <br/></li>
+	<li><b>24/03/2018:</b> Segunda <b>PROVA</b> marcada para o dia <b>10/05/2018</b> no horário da aula. <br/> <br/></li>
+    <li><b>01/05/2018:</b> Chamamos atenção aos horários das monitorias atualizados e
+        ao link do programa da UFRJ adicionados na aba "Extra" deste site.<br/> <br/></li>
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Cronograma<hr/></h2>
+Neste espaço teremos um breve resumo do conteúdo coberto em cada aula.<br/>
+Esta página será atualizada semanalmente.
+<ul>
+	<li><b>Aula 1 - 27/02.</b> <br/> Números reais, intervalos e suas representações.<br/><br/></li>
+	<li><b>Aula 2 - 01/03.</b> <br/> Propriedades algébricas dos números reais. Potenciação e notação científica. <br/><br/></li>
+	<li><b>Aula 3 - 06/03.</b> <br/> Resolução de exercícios.  <br/><br/></li>
+	<li><b>Aula 4 - 08/03.</b> <br/> Produtos notáveis e equações de primeiro e segundo graus.  <br/><br/></li>
+	<li><b>Aula 5 - 13/03.</b> <br/> Radiciação e expressões fracionárias.  <br/><br/></li>
+	<li><b>Aula 6 - 20/03.</b> <br/> Inequações e resolução de exercícios.  <br/><br/></li>
+	<li><b>Aula 7 - 22/03.</b> <br/> Conceito de funções. Gráfico de uma função. Achando o domínio de definição.  <br/><br/></li>
+	<li><b>Aula 8 - 23/03.</b> <br/> Resolução de exercícios.  <br/><br/></li>
+	<li><b>Aula 9 - 27/03.</b> <br/> Leitura de gráficos: critério da reta vertical; localizando os zeros de uma função;
+					 intervalos onde uma função é monótona; pontos de máximos e mínimos locais.  <br/><br/></li>
+	<li><b>Aula 10 - 29/03.</b> <br/> Aula de exercícios.  <br/><br/></li>
+	<li><b>Aula 11 - 03/04.</b> <br/> Primeira Prova.  <br/><br/></li>
+	<li><b>Aula 12 - 05/04.</b> <br/> Correção da prova e Funções de primeiro grau. <br/><br/></li>
+	<li><b>Aula 13 - 10/04.</b> <br/> Revisão da prova. Teste diagnóstico do departamento de matemática. <br/><br/></li>
+    <li><b>Aula 14 - 12/04.</b> <br/> Gráficos de Funções do primeiro grau. <br/><br/></li>
+    <li><b>Aula 15 - 17/04.</b> <br/> Graficos de Funções do segundo grau e exercícios. <br/><br/></li>
+    <li><b>Aula 16 - 19/04.</b> <br/> Função monomial. Graficos de funções exponencial e logística. Introdução aos limites.<br/><br/></li>
+    <li><b>Aula 17 - 24/04.</b> <br/> Continuidade e limites. Limites de polinômios. <br/><br/></li>
+    <li><b>Aula 18 - 26/04.</b> <br/> Gráficos da função seno e cosseno. Resolução de exercícios. <br/><br/></li>
+    <li><b>Aula 19 - 03/05.</b> <br/> Resolução de exercícios. <br/><br/></li>
+    <li><b>Aula 20 - 08/05.</b> <br/> Resolução de exercícios. <br/><br/></li>
+    <li><b>Aula 21 - 10/05.</b> <br/> Segunda Prova. <br/><br/></li>
+	
+	
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Avaliação<hr/></h2>
+A avaliação dos alunos se dará por meio de <b>três provas</b>.<br/>
+A média final (MF) será a <b>média aritmética</b> entre a nota da primeira prova (P1), a nota da segunda prova (P2) e a nota
+da terceira prova (P3).<br/><br/>
+
+<h1 style="background-color:#4CAF50; font-size:1.3em; text-align:center;margin: 0 20%;" >MF = (P1 + P2 + P3)/3</h1>
+
+<br/><br/><b style="font-size:1.2em">Critério:</b>
+<ul style="font-size:1.2em;">
+	<li> Média Final maior ou igual a 70 (MF &#8805; 70): <b>aprovado</b>;</li>
+	<li> Média Final menor que 40 (MF<40): <b>reprovado</b> (sem direito a prova final);</li>
+	<li> Média Final entre 40 e 70 (40 &#8804; MF < 70): aprovação sujeita a um <b>exame final</b> (EF):</li>
+	<ul>
+		<li> Se (EF+MF)/2 &#8805 50: <b>aprovado</b>;</li>
+		<li> Se (EF+MF)/2 < 50: <b>reprovado</b>.</li>
+	</ul>
+</ul>
+Informações sobre como solicitar <b>segunda chamada</b> ou <b>revisão de avaliação</b> podem ser encontradas no link a seguir.
+<p style="text-align:center;"><a href="http://www.mat.ufpr.br/departamento/documentos.html" target="_blank">
+www.mat.ufpr.br/departamento/documentos.html</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Exercícios<hr/></h2>
+Neste espaço teremos as listas de exercício.
+<ul>
+	<li><a href="Listas/CM201-Lista01-2018.pdf" target="_blank">Lista 01</a>. Com respostas: <a href="Listas/Respostas-CM201-Lista01-2018.pdf" target="_blank">Lista 01</a>. </li>
+	<li><a href="Listas/CM201-Lista02-2018.pdf" target="_blank">Lista 02</a>. </li>
+	<li><a href="Listas/CM201-Lista03-2018.pdf" target="_blank">Lista 03</a>. </li>
+	<li><a href="Listas/CM201-Lista04-2018.pdf" target="_blank">Lista 04</a>. </li>
+	<li><a href="Listas/CM201-Lista05-2018.pdf" target="_blank">Lista 05</a>. </li>
+	<li><a href="Listas/CM201-Lista06-2018.pdf" target="_blank">Lista 06</a>. </li>
+	<li><a href="Listas/CM201-Lista07-2018.pdf" target="_blank">Lista 07</a>. </li>
+	<li><a href="Listas/CM201-Lista08-2018.pdf" target="_blank">Lista 08</a>. </li>
+</ul>
+Segue um link onde pode-se encontrar mais exercícios importantes.
+    <p style="text-align:center;">
+http://home.ufam.edu.br/andersonlfc/Nivelamento_Matem%C3%A1tica/Livro%20Texto.pdf/</p>
+</div>
+
+<div class="notSeen">
+<h2>Monitoria<hr/></h2>
+    O departamento de matemática disponibiliza monitores para os alunos
+    de Introdução ao Cálculo. Os horários podem ser encontrados no link abaixo.
+    <p style="text-align:center;"><a href="monitoria.pdf" target="_blank">
+Horários da monitoria de Introdução ao Cálculo.</a></p>
+    Também há a possibilidade de tirar dúvidas diretamento com o professor. Neste caso o horário é flexível e deve ser agendado por e-mail. </br></br></br>
+<h2>Programa de Atenção e Resiliência Acadêmica (PARA)<hr/></h2>
+    Programa desenvolvido na UFRJ para auxílio na vida acadêmica.
+    <p style="text-align:center;"><a href="http://ambamind.com.br/" target="_blank">
+http://ambamind.com.br/</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Notas de aula<hr/></h2>
+Notas de aula poderão ser adicionadas neste espaço durante o curso.
+</div>
+
+
+</div>
+
+
+<div class="rodape">
+<a href="http://www.mat.ufpr.br" target="_blank">DMAT-UFPR</a>
+<a href="" target="_blank">Contato</a>
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank">&copy 2018 - Hudson Lima</a>
+
+</div>
+
+<script>
+function select(n) {	
+var elementsA = document.getElementsByClassName("menuColumn")[0].getElementsByTagName("div");
+var elementsC = document.getElementsByClassName("contentArea")[0].getElementsByTagName("div");
+var i;
+	for (i=0; i<elementsA.length; i++) {
+		elementsA[i].className = "barItem"; //put them all to normal
+	}
+	for (i=0; i<elementsC.length; i++){
+		elementsC[i].className = "notSeen";
+	}
+	elementsA[n].className = "barItemSelected"; //put the clicked to selected
+	elementsC[n].className = "Seen";
+}
+
+</script>
+
+
+</body>
+</html>
