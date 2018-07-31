@@ -1,0 +1,314 @@
+<!-- 
+This page was originally created by Hudson Lima.
+You may edit it as you wish, provided you DO NOT
+edit this comment. Hints and comments are welcome:
+hudson04brhelper@gmail.com
+ -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"/>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			background-color: #ddd;
+			position: relative;
+			font-size: 100%;
+		}
+		.menuColumn{
+			background-color: #666;
+			color: black;
+			float: left;
+			padding: 0;
+			margin: 0;
+			width: 20%;
+			height: 100vh;
+			position: absolute;
+		}
+		
+		.header{
+			background-color: #333;
+			font-size: 1.3em;
+			color: white;
+			float: right;
+			margin: 0;
+			padding-top: 3vh;
+			width: 80%;
+			height: 10vh;
+			position: relative;
+			text-align: center;
+		}
+		
+		
+		.contentArea{
+			position: relative;
+			background-color: #ddd;;
+			float: right;
+			margin: 0;
+			width: 80%;
+			height: 82vh;
+			overflow: auto;
+		}
+		
+		.rodape{
+			position: relative;
+			margin: 0;
+			width: 80%;
+			padding: 1vh 0;
+			height: 3vh;
+			float: right;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 0.95em;
+		}
+		
+		.rodape a{
+			display: inline;
+			padding: 0 1%;
+			text-decoration: none;
+			color: white;
+		}
+		
+		.barItem{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			margin-left:3em;
+			padding: 1em;
+			border-bottom: 1px solid #67e56b;
+			color: #4CAF50;
+			cursor: pointer;
+		}
+
+		.barItemSelected{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid white;
+			color: white;
+			cursor: pointer;
+		}
+
+		.barItem:hover{
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid #ccc;
+			color: #ccc;
+			transition: 0.7s;
+		}
+		
+		.Seen{
+			margin: 4% 6%;
+			font-size:1.1em;
+		}
+		
+		.notSeen{
+			display: none;
+		}
+		
+		h2{
+			color: #4CAF50;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+
+<div class="menuColumn">
+<a href="http://www.ufpr.br/" target="_blank"><img id = "logo" src="logo_ufpr_branca.png" width="75%" style="margin-top:5%;margin-left:12.5%;margin-bottom:10%;"><img/><a/>
+
+<div class = "barItemSelected" onclick = "select(0)">O Curso</div>
+<div class = "barItem" onclick = "select(1)">Avisos</div>
+<div class = "barItem" onclick = "select(2)">Cronograma</div>
+<div class = "barItem" onclick = "select(3)">Avaliação</div>
+<div class = "barItem" onclick = "select(4)">Exercícios</div>
+<div class = "barItem" onclick = "select(5)">Extra</div>
+<div class = "barItem" onclick = "select(6)">Notas de Aula</div>
+
+<div/> 
+
+<div class="header">
+CM095 - Análise I <br/> <span style="font-size:80%;"> DMAT - UFPR - 2018 </span>
+</div>
+
+
+<div class="contentArea">
+
+<div class="Seen">
+<h2>Sobre o curso<hr/>
+</h2>
+Esta é a página do curso <i><a href="http://www.mat.ufpr.br/graduacao/matematica/curriculo/ementas_bach.html#CM095" target="_blank">CM095 - Análise I</a></i> para 
+<a href="http://www.mat.ufpr.br/" target="_blank">Matemática e Matemática Industrial</a>, ministrado pelo professor
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank">Hudson Lima</a>. <br/><br/>
+Este curso tem como objetivo o estudo formal dos conjuntos numéricos e das funções entre estes conjuntos. Uma descrição precisa do que trata a <b>Análise real</b> pode ser encontrada na página do <a href="https://en.wikipedia.org/wiki/Real_analysis" target="_blank"><i>Wikipedia - Real Analysis</i></a> em inglês (infelizmente a página em português deixa muito a desejar). De qualquer forma um entendimento maior deverá ser adquirido durante o curso.
+<br/><br/>
+Ao final do curso, é esperado do aluno o domínio dos seguintes conteúdos:
+<ul>
+	<li>Noções Topológicas na reta.</li>
+    <li>Sequência e séries de números reais e funções.</li>
+    <li>Limites, continuidade e diferenciabilidade de funções reais.</li>
+</ul>
+
+
+<h2>Programa<hr/></h2>
+    O programa oficial da diciplina é pode ser encontrado em <i><a href="http://www.mat.ufpr.br/graduacao/matematica/curriculo/ementas_bach.html#CM095" target="_blank">CM095 - Análise I</a></i>.
+    Abaixo segue uma lista de conteúdos que pretendemos seguir.
+
+
+<span style="margin: 1em 1.3em;display:block;">
+	O corpo dos reais: supremo e ínfimo. <br/>
+	Seqüências e séries numéricas. <br/>
+    Topologia da reta. <br/>
+	Limites e continuidade de funções. <br/>
+	Diferenciabilidade e suas propriedades.<br/>
+	Sequências e séries de funções. <br/>	
+    Integral de Riemman e suas propriedades. <br/><br/>
+	</span>
+<span/>
+<h2>Bibliografia<hr/></h2>
+<span style="margin:1em 1.3em;display:block;">
+    
+Abbott, Stephen, <b>Understanding Analysis</b>, Undergradutate Texts in Mathematics. New York: Springer-Verlag, 2001. <br/><br/>
+    
+Ávila, Geraldo, <b>Introdução a análise matemática</b>, E. Beiicher, 1999.  <br/><br/>  
+    
+Lima, Elon L., <b>Análise Real</b>, Coleção Matemática Universitária, SBM. <br/><br/> 
+    
+Lima, Elon L., <b>Curso de análise</b>, vol.1, Projeto Euclides, SBM
+    <br/><br/>
+    
+Apostol , Tom M., <b>Calculus</b>, vol.1, Wiley.<br/><br/>
+    
+Bartle, R. and Sherbert, D., <b>Introduction to Real Analysis </b> Editora: John Wiley &Sons, USA.    <br/><br/>
+    
+    
+    Royden, H.L., <b>Real Analysis</b>, Macmillan USA; 3rd Revised edition edition (Mar. 1988).<br/><br/>
+    
+    Rudin, W., <b>Principles of Mathematical Analysis</b>, Mc-Graw-Hill.<br/><br/>
+
+    
+<span>
+
+
+</div>
+
+<div class="notSeen">
+<h2>Avisos<hr/></h2>
+Os avisos relativos ao curso serão publicados aqui <b>em ordem decrescente de data.</b>
+<ul>
+    <li><b>31/07/2018:</b> Não teremos aula nos dias 01, 06 e 08 de Agosto em razão do <a href="http://www.icm2018.org/" target="_blank">ICM</a>. As aulas voltarão normalmente na segunda-feira dia 13/08/2018.
+    Em breve entrarei em contato sobre a reposição destas aulas.<br/><br/></li>
+	
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Cronograma<hr/></h2>
+Neste espaço teremos um breve resumo do conteúdo coberto em cada aula.<br/>
+Esta página será atualizada semanalmente.
+<ul>
+	<li><b>Aula 1 - 30/07.</b> <br/> Introdução ao conceito de número. Axiomas de Peano. Relações de equivalência. Construção dos racionais.<br/><br/></li>
+	
+</ul>
+</div>
+
+
+<div class="notSeen">
+<h2>Avaliação<hr/></h2>
+A avaliação dos alunos se dará por meio de <b>duas provas</b> e <b>listas de exercícios</b> (pelo menos 3 listas).<br/>
+A média final (MF) será a <b>média aritmética</b> entre a nota da primeira prova (P1), a nota da segunda prova (P2) e
+a média das listas (ML).<br/><br/>
+
+<h1 style="background-color:#4CAF50; font-size:1.3em; text-align:center;margin: 0 20%;" >MF = (P1 + P2 + ML)/3</h1>
+
+<ul style="font-size:1.2em;">
+	<li> Média Final maior ou igual a 70 (MF &#8805; 70): <b>aprovado</b>;</li>
+	<li> Média Final menor que 40 (MF<40): <b>reprovado</b> (sem direito a prova final);</li>
+	<li> Média Final entre 40 e 70 (40 &#8804; MF < 70): aprovação sujeita a um <b>exame final</b> (EF):</li>
+	<ul>
+		<li> Se (EF+MF)/2 &#8805 50: <b>aprovado</b>;</li>
+		<li> Se (EF+MF)/2 < 50: <b>reprovado</b>.</li>
+	</ul>
+</ul>
+Informações sobre como solicitar <b>segunda chamada</b> ou <b>revisão de avaliação</b> podem ser encontradas no link a seguir.
+<p style="text-align:center;"><a href="http://www.mat.ufpr.br/departamento/documentos.html" target="_blank">
+www.mat.ufpr.br/departamento/documentos.html</a></p>
+
+<div/>
+
+<div class="notSeen">
+<h2>Exercícios<hr/></h2>
+Neste espaço teremos as listas de exercício.
+<ul>
+	<li><a href="Listas/CM201-Lista01-2018.pdf" target="_blank">Lista 01</a>. Com respostas: <a href="Listas/Respostas-CM201-Lista01-2018.pdf" target="_blank">Lista 01</a>. </li>
+	<li><a href="Listas/CM201-Lista02-2018.pdf" target="_blank">Lista 02</a>. </li>
+	<li><a href="Listas/CM201-Lista03-2018.pdf" target="_blank">Lista 03</a>. </li>
+	<li><a href="Listas/CM201-Lista04-2018.pdf" target="_blank">Lista 04</a>. </li>
+	<li><a href="Listas/CM201-Lista05-2018.pdf" target="_blank">Lista 05</a>. </li>
+	<li><a href="Listas/CM201-Lista06-2018.pdf" target="_blank">Lista 06</a>. </li>
+	<li><a href="Listas/CM201-Lista07-2018.pdf" target="_blank">Lista 07</a>. </li>
+	<li><a href="Listas/CM201-Lista08-2018.pdf" target="_blank">Lista 08</a>. </li>
+</ul>
+
+</div>
+
+<div class="notSeen">
+<h2>Monitoria<hr/></h2>
+    O departamento de matemática disponibiliza monitores para os alunos
+    de Introdução ao Cálculo. Os horários podem ser encontrados no link abaixo.
+    <p style="text-align:center;"><a href="monitoria.pdf" target="_blank">
+Horários da monitoria de Introdução ao Cálculo.</a></p>
+    Também há a possibilidade de tirar dúvidas diretamento com o professor. Neste caso o horário é flexível e deve ser agendado por e-mail. </br></br></br>
+<h2>Programa de Atenção e Resiliência Acadêmica (PARA)<hr/></h2>
+    Programa desenvolvido na UFRJ para auxílio na vida acadêmica.
+    <p style="text-align:center;"><a href="http://ambamind.com.br/" target="_blank">
+http://ambamind.com.br/</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Notas de aula<hr/></h2>
+Notas de aula poderão ser adicionadas neste espaço durante o curso.
+</div>
+
+
+</div>
+
+
+<div class="rodape">
+<a href="http://www.mat.ufpr.br" target="_blank">DMAT-UFPR</a>
+<a href="" target="_blank">Contato</a>
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank">&copy 2018 - Hudson Lima</a>
+
+</div>
+
+<script>
+function select(n) {	
+var elementsA = document.getElementsByClassName("menuColumn")[0].getElementsByTagName("div");
+var elementsC = document.getElementsByClassName("contentArea")[0].getElementsByTagName("div");
+var i;
+	for (i=0; i<elementsA.length; i++) {
+		elementsA[i].className = "barItem"; //put them all to normal
+	}
+	for (i=0; i<elementsC.length; i++){
+		elementsC[i].className = "notSeen";
+	}
+	elementsA[n].className = "barItemSelected"; //put the clicked to selected
+	elementsC[n].className = "Seen";
+}
+
+</script>
+
+
+</body>
+</html>
