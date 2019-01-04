@@ -1,0 +1,287 @@
+<!-- 
+This page was originally created by Hudson Lima.
+You may edit it as you wish, provided you DO NOT
+edit this comment. Hints and comments are welcome:
+hudson04brhelper@gmail.com
+ -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"/>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			background-color: #ddd;
+			position: relative;
+			font-size: 100%;
+		}
+		.menuColumn{
+			background-color: #666;
+			color: black;
+			float: left;
+			padding: 0;
+			margin: 0;
+			width: 20%;
+			height: 100vh;
+			position: absolute;
+		}
+		
+		.header{
+			background-color: #333;
+			font-size: 1.3em;
+			color: white;
+			float: right;
+			margin: 0;
+			padding-top: 3vh;
+			width: 80%;
+			height: 10vh;
+			position: relative;
+			text-align: center;
+		}
+		
+		
+		.contentArea{
+			position: relative;
+			background-color: #ddd;;
+			float: right;
+			margin: 0;
+			width: 80%;
+			height: 82vh;
+			overflow: auto;
+		}
+		
+		.rodape{
+			position: relative;
+			margin: 0;
+			width: 80%;
+			padding: 1vh 0;
+			height: 3vh;
+			float: right;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 0.95em;
+		}
+		
+		.rodape a{
+			display: inline;
+			padding: 0 1%;
+			text-decoration: none;
+			color: white;
+		}
+		
+		.barItem{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			margin-left:3em;
+			padding: 1em;
+			border-bottom: 1px solid #67e56b;
+			color: #4CAF50;
+			cursor: pointer;
+		}
+
+		.barItemSelected{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid white;
+			color: white;
+			cursor: pointer;
+		}
+
+		.barItem:hover{
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid #ccc;
+			color: #ccc;
+			transition: 0.7s;
+		}
+		
+		.Seen{
+			margin: 4% 6%;
+			font-size:1.1em;
+		}
+		
+		.notSeen{
+			display: none;
+		}
+		
+		h2{
+			color: #4CAF50;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+
+<div class="menuColumn">
+<a href="http://www.ufpr.br/" target="_blank"><img id = "logo" src="logo_ufpr_branca.png" width="75%" style="margin-top:5%;margin-left:12.5%;margin-bottom:10%;"></img></a>
+
+<div class = "barItemSelected" onclick = "select(0)">O Curso</div>
+<div class = "barItem" onclick = "select(1)">Avisos</div>
+<div class = "barItem" onclick = "select(2)">Cronograma</div>
+<div class = "barItem" onclick = "select(3)">Avaliação</div>
+<div class = "barItem" onclick = "select(4)">Exercícios</div>
+<div class = "barItem" onclick = "select(5)">Extra</div>
+<div class = "barItem" onclick = "select(6)">Notas de Aula</div>
+
+</div> 
+
+<div class="header">
+EMA749 - Topologia Geral <br/> <span style="font-size:80%;"> DMAT - UFPR - 2019 </span>
+</div>
+
+<div class="contentArea">
+
+<div class="Seen">
+<h2>Sobre o curso<hr/>
+</h2>
+    Esta é a página do curso <i><a href="http://www.mat.ufpr.br/verao/2019/m2_cursos.html#c2" target="_blank">EMA749 - Tologia Geral</a></i> para 
+<a href="http://www.mat.ufpr.br/ppgma" target="_blank">Pós-Graduação em Matemática</a>, ministrado pelo professor
+<a href="https://hudsonnl.github.io/" target="_blank">Hudson Lima</a>. <br/><br/>
+Este curso tem como objetivo o estudo formal das formas geométricas nos quais objetos matemáticos podem ser apresentados. Em topologia estamos primordialmente preocupados com a forma em si, sem se preocupar com a maneira que a forma é apresentada. Dessa maneira é que podemos considerar uma rosquinha topologicamente equivalente a uma caneca. Este e outros exemplos interessantes podem ser vistos neste <a href="https://www.youtube.com/watch?v=H8qwqGjOlSE" target="_blank">vídeo</a>.
+<br/>
+<br/>
+    O curso de <i>Topologia Geral</i> lida com as definições conjuntísticas e construções abstratas de espaços topológicos. Tem como conceitos fundamentais: <b>continuidade, compacidade e conexidade</b>.
+<br/><br/>
+    Gostaria de chamar a atenção para uma ferramenta extraordinária de estudo chamada ProofWiki, que consiste de uma "Wikipédia" para demonstrações: <a href="https://proofwiki.org/wiki/Category:Topology" target="_blank">ProofWiki-topology</a>. Como qualquer enciclopédia, o proofwiki deve ser usado com cuidado, pois pode conter erros. 
+<br/><br/>
+    
+
+
+<h2>Programa<hr/></h2>
+    O programa oficial da diciplina pode ser encontrado em <i><a href="http://www.mat.ufpr.br/ppgma/curriculo/disciplinas.html#ema749" target="_blank">EMA749 - Topologia Geral</a></i>.
+    Abaixo segue uma lista de conteúdos que pretendemos seguir.
+
+
+<span style="margin: 1em 1.3em;display:block;">
+	Espaços Topologicos e exemplos. <br/>
+	Funções contínuas, imersões, mergulhos, quocientes e homeomorfismos. <br/>
+    Axiomas de separação e enumerabilidade. <br/>
+    Conexidade e Compacidade. <br/>
+    Construções de espaços topológicos (a partir de bases, de espaços iniciais e exigindo que funções sejam contínuas). <br/>
+    
+    
+	</span>
+<span/>
+<h2>Bibliografia<hr/></h2>
+<span style="margin:1em 1.3em;display:block;">
+
+John M. Lee, <b>Introduction to topological manifolds</b>. Graduate Texts in Mathematics 202. <br/><br/>
+James R. Munkres, <b>Topology: A First Course</b>. Prentice Hall.   <br/><br/> 
+Elon Lages Lima, <b>Topologia Geral</b>. Ao livro Técnico. <br/><br/>
+G. F. Simmons, <b>Introduction to Topology and Modern Analysis</b>. McGraw-Hill, 1963<br/><br/>
+
+    </span>
+
+</div>
+
+<div class="notSeen">
+<h2>Avisos<hr/></h2>
+Os avisos relativos ao curso serão publicados aqui <b>em ordem decrescente de data.</b>
+<ul>
+    <li><b>03/01/2019:</b> Sejam todos bem-vindos. 
+        <br/><br/></li>
+	
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Cronograma<hr/></h2>
+Neste espaço teremos um breve resumo do conteúdo coberto em cada aula.<br/>
+Esta página será atualizada semanalmente.
+<ul>
+<li><b>Aula 1 - 07/01.</b> <br/> Introdução: resultados clássicos, sobre o cronograma do curso, conceito de topologia, funções contínuas e vários exemplos.<br/><br/></li>
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Avaliação<hr/></h2>
+A avaliação dos alunos se dará por meio de <b>duas provas</b>. <br/>
+A média final (MF) será a <b>média aritmética</b> entre a nota da primeira prova (P1) e a nota da segunda prova (P2).<br/><br/>
+
+<h1 style="background-color:#4CAF50; font-size:1.3em; text-align:center;margin: 0 20%;" >MF = (P1 + P2)/2</h1>
+<br/>
+
+Mais informações podem ser encontradas no link a seguir.
+<p style="text-align:center;"><a href="http://www.mat.ufpr.br/ppgma/curriculo/documentos.html" target="_blank">
+http://www.mat.ufpr.br/ppgma/curriculo/documentos.html</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Exercícios<hr/></h2>
+Neste espaço teremos as listas de exercício.
+<ul>
+    
+    
+	<li><b>07/01/2019: </b><a href="" target="_blank">Lista 01</a>.
+    </li><br/>
+    
+    
+    
+</ul>
+    
+    
+
+</div>
+
+<div class="notSeen">
+<!-- <h2>Monitoria<hr/></h2>
+    O departamento de matemática disponibiliza monitores para os alunos
+    de Introdução ao Cálculo. Os horários podem ser encontrados no link abaixo.
+    <p style="text-align:center;"><a href="monitoria.pdf" target="_blank">
+Horários da monitoria de Introdução ao Cálculo.</a></p>
+    Também há a possibilidade de tirar dúvidas diretamento com o professor. Neste caso o horário é flexível e deve ser agendado por e-mail. </br></br></br> -->
+<h2>Programa de Atenção e Resiliência Acadêmica (PARA)<hr/></h2>
+    Programa desenvolvido na UFRJ para auxílio na vida acadêmica.
+    <p style="text-align:center;"><a href="http://ambamind.com.br/" target="_blank">
+http://ambamind.com.br/</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Notas de aula<hr/></h2>
+Notas de aula poderão ser adicionadas neste espaço durante o curso.
+</div>
+
+
+</div>
+
+
+<div class="rodape">
+<a href="http://www.mat.ufpr.br" target="_blank">DMAT-UFPR</a>
+<a href="" target="_blank">Contato</a>
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank">&copy 2018 - Hudson Lima</a>
+
+</div>
+
+<script>
+function select(n) {	
+var elementsA = document.getElementsByClassName("menuColumn")[0].getElementsByTagName("div");
+var elementsC = document.getElementsByClassName("contentArea")[0].getElementsByTagName("div");
+var i;
+	for (i=0; i<elementsA.length; i++) {
+		elementsA[i].className = "barItem"; //put them all to normal
+	}
+	for (i=0; i<elementsC.length; i++){
+		elementsC[i].className = "notSeen";
+	}
+	elementsA[n].className = "barItemSelected"; //put the clicked to selected
+	elementsC[n].className = "Seen";
+}
+
+</script>
+
+
+</body>
+</html>
