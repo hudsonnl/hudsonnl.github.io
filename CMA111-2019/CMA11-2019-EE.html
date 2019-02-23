@@ -1,0 +1,292 @@
+<!-- 
+This page was originally created by Hudson Lima.
+You may edit it as you wish, provided you DO NOT
+edit this comment. Hints and comments are welcome:
+hudson04brhelper@gmail.com
+ -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"/>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			background-color: #ddd;
+			position: relative;
+			font-size: 100%;
+		}
+		.menuColumn{
+			background-color: #666;
+			color: black;
+			float: left;
+			padding: 0;
+			margin: 0;
+			width: 20%;
+			height: 100vh;
+			position: absolute;
+		}
+		
+		.header{
+			background-color: #333;
+			font-size: 1.3em;
+			color: white;
+			float: right;
+			margin: 0;
+			padding-top: 3vh;
+			width: 80%;
+			height: 10vh;
+			position: relative;
+			text-align: center;
+		}
+		
+		
+		.contentArea{
+			position: relative;
+			background-color: #ddd;;
+			float: right;
+			margin: 0;
+			width: 80%;
+			height: 82vh;
+			overflow: auto;
+		}
+		
+		.rodape{
+			position: relative;
+			margin: 0;
+			width: 80%;
+			padding: 1vh 0;
+			height: 3vh;
+			float: right;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 0.95em;
+		}
+		
+		.rodape a{
+			display: inline;
+			padding: 0 1%;
+			text-decoration: none;
+			color: white;
+		}
+		
+		.barItem{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			margin-left:3em;
+			padding: 1em;
+			border-bottom: 1px solid #67e56b;
+			color: #4CAF50;
+			cursor: pointer;
+		}
+
+		.barItemSelected{
+			font-size: 0.8em;
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid white;
+			color: white;
+			cursor: pointer;
+		}
+
+		.barItem:hover{
+			display: block;
+			text-align: right;
+			margin: 1em;
+			padding: 1em;
+			border-bottom: 1px solid #ccc;
+			color: #ccc;
+			transition: 0.7s;
+		}
+		
+		.Seen{
+			margin: 4% 6%;
+			font-size:1.1em;
+		}
+		
+		.notSeen{
+			display: none;
+		}
+		
+		h2{
+			color: #4CAF50;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+
+<div class="menuColumn">
+<a href="http://www.ufpr.br/" target="_blank">
+    <img id = "logo" src="logo_ufpr_branca.png" width="75%" style="margin-top:5%;margin-left:12.5%;margin-bottom:10%;">
+</a>
+
+<div class = "barItemSelected" onclick = "select(0)">O Curso</div>
+<div class = "barItem" onclick = "select(1)">Avisos</div>
+<div class = "barItem" onclick = "select(2)">Cronograma</div>
+<div class = "barItem" onclick = "select(3)">Avaliação</div>
+<div class = "barItem" onclick = "select(4)">Exercícios</div>
+<div class = "barItem" onclick = "select(5)">Extra</div>
+<div class = "barItem" onclick = "select(6)">Notas de Aula</div>
+
+</div> 
+
+<div class="header">
+CMA111 - Cálculo 1A <br/> <span style="font-size:80%;"> DMAT - UFPR - 2019 </span>
+</div>
+
+
+<div class="contentArea">
+
+<div class="Seen">
+<h2>Sobre o curso<hr/>
+</h2>
+Esta é a página do curso <i><a href="" >CMA111 - Cálculo 1A</a></i> para 
+<a href="http://www.eletrica.ufpr.br/" target="_blank">Engenharia Elétrica</a>, ministrado pelo professor
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank">Hudson Lima</a>. <br/><br/>
+Este curso tem como objetivo o estudo das funções suaves definidas em intervalos de números reais.
+<br/><br/>
+Ao final do curso, é esperado do aluno os seguintes conhecimentos:
+<ul>
+	<li>Manipular funções reais de uma variável real.</li>
+    <li>Habilidade em calcular limites, derivadas e integrais.</li>
+    <li>Capacidade de usar o conhecimento do curso para resolver problemas práticos.</li>
+</ul>
+
+
+<h2>Programa<hr/></h2>
+O programa oficial da diciplina pode ser encontrado em <a href="http://www.mat.ufpr.br/documentos/programas/CMA111.pdf" target="_blank">CMA111</a>. Aqui um resumo: 
+
+
+<span style="margin: 1em 1.3em;display:block;">
+    Funções de uma variável real. <br/>
+    Limites e continuidade. <br/>
+    Derivadas e regras de derivação. <br/>
+    Teorema do valor médio e resto de Lagrange. <br/>
+    Máximos e mínimos. <br/>
+    Integrais e técnicas de integração. <br/>	
+</span>
+    
+<h2>Bibliografia<hr/></h2>
+<span style="margin:1em 1.3em;display:block;">
+ 
+J. Stewart, <b>Cálculo</b> - Vol. 1 , 7a edição, Cengage Learning, São Paulo, 2013.<br/><br/>
+
+GUIDORIZZI, H. L. - <b>Um Curso de Cálculo</b>, vol. 1 e 2, L TC, Rio de Janeiro.<br/><br/>
+    
+LEITHOLD, L. - <b>O Cálculo com Geometria Analítica</b>, vol.1, Harbra, Rio de Janeiro.<br/><br/>
+
+</span>
+
+</div>
+
+<div class="notSeen">
+<h2>Avisos<hr/></h2>
+Os avisos relativos ao curso serão publicados aqui (em ordem decrescente de data).
+<ul>
+    <li><b>23/02/2019:</b> O <a href="http://www.mat.ufpr.br/" target="_blank">Departamento de Matemática</a> oferece turmas de cálculo especiais para alunos avançados. O teste de seleção será na próxima quarta-feira dia 27/02/2019. Para mais informações <a href="http://www.mat.ufpr.br/honors/TurmaHonors.jpeg" target="_blank">click aqui</a>.<br/><br/></li>
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Cronograma<hr/></h2>
+Neste espaço teremos um breve resumo do conteúdo coberto em cada aula.<br/>
+Esta página será atualizada semanalmente.
+<ul>
+	<li><b>Aula 1 - 22/02.</b> <br/> Conjuntos numéricos, função módulo e apresentação do curso.<br/><br/></li>
+	<li><b>Aula 2 - 25/02.</b> <br/> .<br/><br/></li>
+    <li><b>Aula 3 - 27/02.</b> <br/> .<br/><br/></li>
+    <li><b>Aula 4 - 01/03.</b> <br/> .<br/><br/></li>
+</ul>
+</div>
+
+<div class="notSeen">
+<h2>Avaliação<hr/></h2>
+A avaliação dos alunos se dará por meio de <b>três provas</b>.<br/>
+A média final (MF) será a <b>média aritmética</b> entre a nota da primeira prova (P1), a nota da segunda prova (P2) e a nota
+da terceira prova (P3).<br/><br/>
+
+<h1 style="background-color:#4CAF50; font-size:1.3em; text-align:center;margin: 0 20%;" >MF = (P1 + P2 + P3)/3</h1>
+
+<br/><br/><b style="font-size:1.2em">Critério:</b>
+<ul style="font-size:1.2em;">
+	<li> Média Final maior ou igual a 70 (MF &#8805; 70): <b>aprovado</b>;</li>
+	<li> Média Final menor que 40 (MF &#60; 40): <b>reprovado</b> (sem direito a prova final);</li>
+	<li> Média Final entre 40 e 70 (40 &#8804; MF &#60; 70): aprovação sujeita a um <b>exame final</b> (EF):</li>
+	<ul>
+		<li> Se (EF+MF)/2 &#8805; 50: <b>aprovado</b>;</li>
+		<li> Se (EF+MF)/2 &#60; 50: <b>reprovado</b>.</li>
+	</ul>
+</ul>
+Informações sobre como solicitar <b>segunda chamada</b> ou <b>revisão de avaliação</b> podem ser encontradas no link a seguir.
+<p style="text-align:center;"><a href="http://www.mat.ufpr.br/departamento/documentos.html" target="_blank">
+www.mat.ufpr.br/departamento/documentos.html</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Exercícios<hr/></h2>
+Neste espaço teremos as listas de exercício.
+<ul>
+	<li><a target="_blank">Lista 01</a> (ainda não). 
+</ul>
+
+</div>
+
+<div class="notSeen">
+<h2>Monitoria<hr/></h2>
+    O departamento de matemática disponibiliza monitores para os alunos
+    de Introdução ao Cálculo. Os horários podem ser encontrados no link abaixo.
+    <p style="text-align:center;"><a target="_blank">
+Ainda não disponibilizado.</a></p>
+    Também há a possibilidade de tirar dúvidas diretamento com o professor. Neste caso o horário é flexível e deve ser agendado por e-mail. <br/><br/><br/>
+<h2>Programa de Atenção e Resiliência Acadêmica (PARA)<hr/></h2>
+    Programa desenvolvido na UFRJ para auxílio na vida acadêmica.
+    <p style="text-align:center;"><a href="http://ambamind.com.br/" target="_blank">
+http://ambamind.com.br/</a></p>
+</div>
+
+<div class="notSeen">
+<h2>Notas de aula<hr/></h2>
+Notas de aula poderão ser adicionadas neste espaço durante o curso.
+</div>
+
+
+</div>
+
+
+<div class="rodape">
+<a href="http://www.mat.ufpr.br" target="_blank">DMAT-UFPR</a>
+<a href="mailto:hudsonlima@ufpr.br?Subject=CMA111-T.ELT" target="_blank">Contato</a>
+<a href="https://docs.ufpr.br/~hudsonlima" target="_blank"> &copy; 2018 - Hudson Lima</a>
+
+</div>
+
+<script>
+function select(n) {	
+var elementsA = document.getElementsByClassName("menuColumn")[0].getElementsByTagName("div");
+var elementsC = document.getElementsByClassName("contentArea")[0].getElementsByTagName("div");
+var i;
+	for (i=0; i<elementsA.length; i++) {
+		elementsA[i].className = "barItem"; //put them all to normal
+	}
+	for (i=0; i<elementsC.length; i++){
+		elementsC[i].className = "notSeen";
+	}
+	elementsA[n].className = "barItemSelected"; //put the clicked to selected
+	elementsC[n].className = "Seen";
+}
+
+</script>
+
+
+</body>
+</html>
